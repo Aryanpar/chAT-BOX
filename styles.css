@@ -1,0 +1,126 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-app {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.chat-sidebar {
+    width: 25%;
+    background: #0d3b66;
+    color: white;
+    padding: 15px;
+}
+
+.chat-sidebar h2 {
+    margin-bottom: 10px;
+}
+
+#clientList {
+    list-style: none;
+    padding: 0;
+}
+
+#clientList li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #faf0ca;
+    border-radius: 8px;
+    cursor: pointer;
+    color: rgb(31, 28, 28);
+}
+
+.chat-main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    background: #faf0ca;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.chat-messages {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background: #f9f9f9;
+}
+
+.chat-footer {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    background: #f1f1f1;
+}
+
+#messageInput {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #f4d35e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.chat-message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.chat-message i {
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+.chat-message p {
+    background-color: #e9ecef;
+    padding: 10px 15px;
+    border-radius: 10px;
+    max-width: 70%;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Chat App</title>
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-app">
+        <div class="chat-sidebar">
+            <h2>Clients</h2>
+            <ul id="clientList">
+                <!-- Dynamically filled -->
+            </ul>
+        </div>
+
+        <div class="chat-main">
+            <div class="chat-header">
+                <img src="owlbox.jpg" alt="Owner" class="profile-pic">
+                <h2>Owl-Box</h2>
+            </div>
+
+            <div class="chat-messages" id="chatMessages">
+                <!-- Messages will appear here -->
+            </div>
+
+            <div class="chat-footer">
+                <select id="platformSelector">
+                    <option value="whatsapp">WhatsApp</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="facebook">Facebook</option>
+                </select>
+                <input type="text" id="messageInput" placeholder="Type a message...">
+                <button onclick="sendMessage()">Send</button>
+                <input type="file" id="fileInput" style="display:none" onchange="uploadImage()">
+                <button onclick="document.getElementById('fileInput').click()">📷</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
